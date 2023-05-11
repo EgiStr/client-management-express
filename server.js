@@ -18,10 +18,16 @@ app.get('/client', function (req, res) {
     res.render('pages/client');
 });
 
+// user page
+app.get('/update_client', function (req, res) {
+    res.render('pages/update_client');
+});
+
 // mentor page
 app.get('/mentor', function (req, res) {
     res.render('pages/mentor');
 });
+
 
 // add mentor page
 app.get('/add_mentor', function (req, res) {
@@ -34,8 +40,8 @@ app.get('/update_mentor', function (req, res) {
 });
 
 // info mentor page
-app.get('/info_mentor', function (req, res) {
-    res.render('pages/info_mentor');
+app.get('/mentor_detail', function (req, res) {
+    res.render('pages/mentor_detail');
 });
 
 // login page
@@ -53,5 +59,20 @@ app.get('/transaksi', function (req, res) {
     res.render('pages/transaksi');
 });
 
-app.listen(8080);
-console.log('8080 is the magic port');
+// Transaksi detail page
+app.get('/transaksi-detil', function (req, res) {
+    res.render('pages/transaksi_detail');
+});
+
+// Transaksi add page
+app.get('/transaksi_add', function (req, res) {
+    res.render('pages/transaksi_add');
+});
+
+// notification page
+app.get('/notification', function (req, res) {
+    res.render('partials/notification');
+});
+
+app.listen(8000);
+console.log(`Express server listening on http://127.0.0.1:8000/, in %s mode`)
