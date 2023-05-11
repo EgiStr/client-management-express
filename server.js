@@ -60,8 +60,8 @@ app.get('/transaksi', function (req, res) {
 });
 
 // Transaksi detail page
-app.get('/transaksi-detil', function (req, res) {
-    res.render('pages/transaksi_detail');
+app.get('/transaksi_payment', function (req, res) {
+    res.render('pages/transaksi_payment');
 });
 
 // Transaksi add page
@@ -72,6 +72,11 @@ app.get('/transaksi_add', function (req, res) {
 // notification page
 app.get('/notification', function (req, res) {
     res.render('partials/notification');
+});
+
+// chat page
+app.get('/diskusi', function (req, res) {
+    res.render('pages/diskusi');
 });
 
 app.listen(8000);
