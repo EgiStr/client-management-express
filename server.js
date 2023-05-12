@@ -74,9 +74,15 @@ app.get('/notification', function (req, res) {
     res.render('partials/notification');
 });
 
-// chat page
+// diskusi page
 app.get('/diskusi', function (req, res) {
     res.render('pages/diskusi');
+});
+
+
+// chat page
+app.get('/diskusi_detail', function (req, res) {
+    res.render('pages/diskusi_detail');
 });
 
 app.listen(8000);
